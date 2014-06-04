@@ -1,8 +1,26 @@
 /* Your Website Styles */
 
+body {
+  background: url("../img/dark.png");
+  text-align: center;
+}
 
+h1 {
+  text-align: center;
+  color: #3FBAB9;
+  font-family: 'Titillium Web', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+body div img[src*="logo"] {
+  width: 8em;
+
+}
 
 /* Gallery Stying */
+
+
 .gallery .control-button {
   color: #ccc;
   color: rgba(255, 255, 255, 0.4);
@@ -12,6 +30,9 @@
   color: white;
   color: rgba(255, 255, 255, 0.8);
 }
+
+
+
 
 /*
 	Theme controls how everything looks in Gallery CSS.
@@ -23,17 +44,29 @@
   height: 400px;
   overflow: hidden;
   text-align: center;
-  background: #4d87e2;
 }
+
+
 .gallery .controls {
   position: absolute;
   bottom: -120px;
   width: 100%;
   text-align: center;
 }
+.gallery .controls img,
+.gallery .controls img {
+  transition: .25s;
+}
+
+
+.gallery .controls img:hover,
+.gallery .controls img:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
 
 .gallery .controls img {
-  border: 5px solid #000;
+  
 }
 
 .gallery .control-button {
@@ -44,6 +77,7 @@
   text-decoration: none;
   transition: color .1s;
 }
+
 
 
 /* Show Grid */
